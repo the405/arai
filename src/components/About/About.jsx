@@ -139,6 +139,13 @@ const About = () => (
         <div className="projects__wrapper">
           <div className="item item--projects">
             <div className="item__info">
+              <span className="emphasis">Metsähallitus (Finnish Forest Administration)</span>
+              <span>Programmer</span>
+              <span className="indent">Hunting quarry planning and management system</span>
+            </div>
+          </div>
+          <div className="item item--projects">
+            <div className="item__info">
               <span className="emphasis">EPV Windpower Ltd.</span>
               <span>Lead programmer</span>
               <span className="indent">Contract and property management system</span>
@@ -147,21 +154,14 @@ const About = () => (
           <div className="item item--projects">
             <div className="item__info">
               <span className="emphasis">Steveco Ltd.</span>
-              <span>Lead programmer</span>
+              <span>Programmer</span>
               <span className="indent">Intranet and content management systems</span>
             </div>
           </div>
           <div className="item item--projects">
             <div className="item__info">
-              <span className="emphasis">Municipality of Vantaa</span>
-              <span>Lead programmer</span>
-              <span className="indent">Multilayered content management system for primary and high schools of Vantaa</span>
-            </div>
-          </div>
-          <div className="item item--projects">
-            <div className="item__info">
               <span className="emphasis">Church in Helsinki</span>
-              <span>Lead programmer</span>
+              <span>Programmer</span>
               <span className="indent">CMS based website</span>
             </div>
           </div>

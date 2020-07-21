@@ -1,8 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const InfoEntry = ({ className, icon, value }) => (
     <span className={className}>
-        <i className={`fas ${icon} fa-fw color-me`} />
+        <FontAwesomeIcon icon={icon} />
         {` ${value}`}
     </span>
 )

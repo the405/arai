@@ -1,22 +1,17 @@
 const baseData = [
   {
-    className: 'phone',
-    icon: 'fa-mobile',
-    value: '(+358) 44 529 3577'
-  },
-  {
     className: 'email',
-    icon: 'fa-envelope',
+    icon: 'envelope',
     value: 'ahti.ruusuvuori@gmail.com'
   },
   {
     className: 'github',
-    icon: 'fa-github',
+    icon: ['fab', 'github'],
     value: 'the405'
   },
   {
     className: 'linkedin',
-    icon: 'linkedin',
+    icon: ['fab', 'linkedin'],
     value: 'ahtiruusuvuori'
   },
 ];
