@@ -1,0 +1,45 @@
+.diceroll {
+    margin: 50px;
+}
+.die {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.die:first-child {
+    margin-bottom: 30px;
+}
+.die>* {
+    margin-right: 10px;
+}
+.die__result {
+    font-size: 1.5em;
+}
+.die input {
+    text-align: center;
+}
+.die button {
+    width: 4em;
+}
+.modes {
+    display: flex;
+    margin: 0.5em 0;
+    align-items: center;
+}
+.modes .mode {
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+}
+.modes .die__modifier {
+    width: 40px;
+    text-align: center;
+    margin-right: 0.5em;
+}
+.die--container {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+}

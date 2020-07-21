@@ -1,0 +1,21 @@
+.api {
+    margin: 50px;
+}
+.api button {
+    width: 100px;
+}
+.api__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.api__wrapper>* {
+    margin-right: 15px;
+}
+.api__server {
+    width: 200px;
+}
+.api ul {
+    list-style: none;
+    padding: 0;
+}

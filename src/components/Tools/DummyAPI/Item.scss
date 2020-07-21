@@ -1,0 +1,11 @@
+.todo__title {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+.todo__title label {
+    padding-left: 0.5em;
+}
+.todo__title * {
+    cursor: pointer;
+}
