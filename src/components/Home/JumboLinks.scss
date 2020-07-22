@@ -1,0 +1,10 @@
+.jumbolinks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+@media (max-width: 640px) {
+	.jumbolinks {
+		flex-direction: column;
+	}
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './components/App';
 import * as serviceWorker from './serviceWorker';
 import "typeface-barlow";
+import { App } from './components/App';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
