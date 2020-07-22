@@ -6,8 +6,10 @@ const Nav = styled.nav`
   border-bottom: 1px solid ${({ theme }) => theme.primary};
   height: 50px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    border: none;
+  }
 `
 
 const Toolbar = () => {
