@@ -38,4 +38,8 @@ label {
     margin: 0;
 }
 
+.container {
+  margin: 1em;
+}
+
 `

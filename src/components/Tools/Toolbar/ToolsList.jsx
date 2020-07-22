@@ -17,7 +17,7 @@ const Ul = styled.ul`
     color: 1px solid ${({ theme }) => theme.textColorDark};
   }
   @media (max-width: 768px) {
-    background-color: ${({ theme }) => theme.background};
+    background-color: ${({ theme }) => theme.backgroundDark};
     justify-content: flex-start;
     flex-flow: column nowrap;
     position: fixed;

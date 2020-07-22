@@ -6,14 +6,18 @@
     a {
         text-transform: uppercase;
     }
+    a:hover, a.active {
+        color: #D5D5D5;
+    }
 }
 #navbar {
     max-width: 800px;
-    padding: 0.5em;
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
+    padding: 0;
     margin: auto;
     font-size: 1.5em;
 

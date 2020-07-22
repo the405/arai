@@ -15,16 +15,14 @@ const ToolsContainer = styled.div`
 
 const Tools = () => (
   <Router>
-    <div className="tools">
-      <Toolbar />
-      <ToolsContainer className="tools--container">
-        <Route exact path="/tools" component={DiceRoll} />
-        <Route path="/tools/diceroll" component={DiceRoll} />
-        <Route path="/tools/cipher" component={CipherContainer} />
-        <Route path="/tools/validation" component={ValidationContainer} />
-        <Route path="/tools/dummyapi" component={DummyAPIContainer} />
-      </ToolsContainer>
-    </div>
+    <Toolbar />
+    <ToolsContainer className="tools--container">
+      <Route exact path="/tools" component={DiceRoll} />
+      <Route path="/tools/diceroll" component={DiceRoll} />
+      <Route path="/tools/cipher" component={CipherContainer} />
+      <Route path="/tools/validation" component={ValidationContainer} />
+      <Route path="/tools/dummyapi" component={DummyAPIContainer} />
+    </ToolsContainer>
   </Router>
 );
 
