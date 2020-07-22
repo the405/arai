@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Jumbolink.scss';
 
 const Jumbolink = ({
@@ -8,7 +9,7 @@ const Jumbolink = ({
   subLabel,
 }) => (
     <div className="jumbolink d-flex flex-column align-items-center">
-      <i className={`fas fa-${icon} color-me`} />
+      <FontAwesomeIcon icon={icon} size="6x" />
       <span className="jumbolink__label">{label}</span>
       <span className="jumbolink__sublabel">{subLabel}</span>
     </div>

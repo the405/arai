@@ -25,13 +25,17 @@
 	&__title {
 		margin: 10em 0;
 		text-transform: uppercase;
+		h1 {
+			font-weight: 200;
+		}
+		h2 {
+			font-weight: 400;
+		}
 	}
 	&__links {
-		flex-direction: row !important;
-
-		a {
-			margin: 1em;
-		}
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }
 
@@ -45,6 +49,6 @@
         font-size: 2.5em;
 	}
 	.home__links {
-		flex-direction: column !important;
+		flex-direction: column;
 	}
 }

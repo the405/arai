@@ -2,6 +2,10 @@
 .jumbolink {
     cursor: pointer;
     transition: all 0.1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
 
     &:hover {
         color: rgb(255,255,255);

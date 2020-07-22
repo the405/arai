@@ -1,6 +1,6 @@
 
 .button {
-    background-color: var(--primary);
+    background-color: rgb(190, 142, 89);
     border: none;
     color: white;
     cursor: pointer;
@@ -24,23 +24,10 @@
     padding-top: calc(.375em - 1px);
     transition: all 0.1s ease-in-out;
 
-    &--active {
-        background-color: #ff3860;
-        &:hover {
-            background-color: #f02850 !important;
-        }
-    }
-
     &:active {
         margin: 0;
         opacity: 1;
         transform: scale(0.96);
         transition: all 0.05s ease-in-out;
-    }
-
-    &:hover {
-        background-color: var(--primary);
-        color: rgb(255,255,255);
-        transition: all 0.2s ease-in-out;
     }
 }

@@ -6,9 +6,11 @@
 h1,
 h3 {
     text-transform: uppercase;
+    font-weight: 400;
 }
 h3 {
-    border-bottom: 1px solid var(--text-color);
+    color: rgb(190, 142, 89);
+    border-bottom: 1px solid rgb(190, 142, 89);
     margin-bottom: 5px;
 }
 .section {
@@ -19,8 +21,7 @@ h3 {
     color: rgb(85, 85, 85);
 }
 .about__content {
-    width: 50%;
-    margin: 100px auto;
+    margin: auto;
     padding: 3%;
     background: white;
     -webkit-box-sizing: border-box;
@@ -36,6 +37,7 @@ h3 {
 }
 .baseinfo__title {
     font-weight: bold;
+    font-weight: 400;
 }
 .baseinfo__links {
     margin: 1em 0;
@@ -92,16 +94,6 @@ table {
 }
 .item--projects {
     width: 50%;
-}
-@media (max-width: 1920px) {
-    .about__content {
-        width: 70%;
-    }
-}
-@media (max-width: 1280px) {
-    .about__content {
-        width: 80%;
-    }
 }
 @media (max-width: 1024px) {
     .item__date {

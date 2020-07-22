@@ -1,23 +1,41 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle (
-	`
-	html, body {
-		margin: 0;
-		padding: 0;
-	}
-	*, *::after, *::before {
-		box-sizing: border-box;
-	}
-	body {
-		align-items: center;
-		background: #0D0C1D;
-		color: #EFFFFA;
-		display: flex;
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-		height: 100vh;
-		justify-content: center;
-		text-rendering: optimizeLegibility;
-	}
-	`
-)
+export const GlobalStyles = createGlobalStyle `
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&display=swap');
+@font-face {
+    font-family: 'MyFont';
+    src: local('Barlow-ExtraLight'), url(./fonts/Barlow-ExtraLight.tff) format('tff');
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: ${({ theme }) => theme.fontFamily};
+    background-color: ${({ theme }) => theme.backgroundWhite};
+    color: ${({ theme }) => theme.textColor};
+}
+
+a {
+    color: ${({ theme }) => theme.primary};
+    text-decoration: none;
+}
+
+a:hover, a.active {
+    color: ${({ theme }) => theme.textColor};
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.highlight {
+    color: ${({ theme }) => theme.primary};
+}
+
+label {
+    margin: 0;
+}
+
+`
