@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '../../common/Button';
 import { Input } from '../../common/Input';
 
@@ -28,15 +29,6 @@ const Die = ({ name, state, handleClick, handleChange, handleModeChange }) => {
       <div className="die--container">
         <div className="modes">
           {renderModes()}
-          <input
-            className="input die__modifier"
-            value={state.modifier}
-            type="number"
-            name="modifier"
-            onChange={handleChange}
-            placeholder="0"
-          />
-          <span>modifier</span>
         </div>
         <div className="die">
           <Input
@@ -47,13 +39,22 @@ const Die = ({ name, state, handleClick, handleChange, handleModeChange }) => {
             handleChange={handleChange}
             placeholder="1"
           />
-          <i className="color-me fas fa-times" />
+          <FontAwesomeIcon icon="times" />
           <Button
             label={name}
             handleClick={handleClick}
             className="button die__sides"
           />
-          <span className="color-me die__result">{'= ' + state.result}</span>
+          <FontAwesomeIcon icon="plus" />
+          <input
+            className="input die__modifier"
+            value={state.modifier}
+            type="number"
+            name="modifier"
+            onChange={handleChange}
+            placeholder="0"
+          />
+          <div className="color-me die__result">{'= ' + state.result}</div>
         </div>
       </div>
     );

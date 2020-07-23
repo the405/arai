@@ -17,8 +17,8 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <GlobalStyles />
         <Router>
+          <GlobalStyles />
           <div className="App">
             <Nav />
             <main>

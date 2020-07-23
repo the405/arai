@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 .die:first-child {
@@ -12,9 +13,11 @@
 }
 .die__result {
     font-size: 1.5em;
+    padding: 0.5em 0;
 }
 .die input {
     text-align: center;
+    width: 50px;
 }
 .die button {
     width: 4em;

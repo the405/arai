@@ -27,6 +27,7 @@ const DieContainer = ({ name, sides }) => {
     } else if (state.mode === 'disadvantage') {
       diceResult -= diceArray.sort((a, b) => a - b)[diceArray.length - 1];
     }
+    if (!state.modifier) diceResult += state.modifier;
     setState({ ...state, result: (diceResult + " (" + diceArray.sort((a, b) => a - b).join(' + ') + ")")});
   }
 

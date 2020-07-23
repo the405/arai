@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import "typeface-barlow";
+import './globalVars';
+
 import { App } from './components/App';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faTimes, faWrench, faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faTimes, faPlus, faWrench, faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fab, faEnvelope, faWrench, faCopyright, faGithub, faLinkedin, faTimes);
+library.add(fab, faEnvelope, faWrench, faCopyright, faGithub, faLinkedin, faTimes, faPlus);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
