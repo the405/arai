@@ -26,6 +26,13 @@ const toolData = [
     activeClassName: 'active',
     iconClass: 'dummyApiIcon',
     to: '/tools/dummyapi',
+  },
+  {
+    name: 'Cowlist',
+    component: 'CowList',
+    activeClassName: 'active',
+    iconClass: 'cowlistIcon',
+    to: '/tools/cowlist',
   }
 ];
 
