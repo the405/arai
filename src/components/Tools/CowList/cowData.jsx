@@ -2,18 +2,18 @@ const cowData = [
 	{
 	  name: 'Bessie',
 	  color: 'brown',
-	  key: 0,
+	  id: 0,
 	},
 	{
 	  name: 'Clarabelle',
 	  color: 'white',
-	  key: 1,
+	  id: 1,
 	},
 	{
 	  name: 'Betty',
 	  color: 'black',
-	  key: 2,
+	  id: 2,
 	},
-  ];
+];
 
-  export { cowData };
+export default cowData;
