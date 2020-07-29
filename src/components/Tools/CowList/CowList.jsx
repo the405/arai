@@ -28,7 +28,7 @@ const CowList = () => {
 		});
 	};
 
-	const renderForm = () => <Form handleDataChange={handleDataChange} submit={addCow} inputData={inputData} />;
+	const renderForm = () => <Form handleChange={handleDataChange} submit={addCow} inputData={inputData} />;
 	const renderList = () => (
 		<>
 			<List list={cowList} />
