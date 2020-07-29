@@ -28,8 +28,13 @@ const CowList = () => {
 		});
 	};
 
-	const renderForm = () => <Form handleDataChange={handleDataChange} addCow={addCow} inputData={inputData} />;
-	const renderList = () => <List cowList={cowList} toggleForm={toggleForm} />;
+	const renderForm = () => <Form handleDataChange={handleDataChange} submit={addCow} inputData={inputData} />;
+	const renderList = () => (
+		<>
+			<List list={cowList} />
+			<button className="button" onClick={toggleForm}>Add a cow</button>
+		</>
+	);
 
 	return editMode ? renderForm() : renderList();
 };

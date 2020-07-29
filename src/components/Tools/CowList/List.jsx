@@ -7,10 +7,9 @@ const StyledList = styled.div`
 	flex-direction: column;
 `
 
-const List = ({ cowList, toggleForm }) => (
+const List = ({ list }) => (
 	<StyledList>
-		{cowList.map(cow => <Cow {...cow} key={cow.id} />)}
-		<button className="button" onClick={toggleForm}>Add a cow</button>
+		{list.map(item => <Cow {...item} key={item.id} />)}
 	</StyledList>
 )
 
