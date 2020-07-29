@@ -20,7 +20,7 @@ const CowList = () => {
 		toggleForm();
 	};
 
-	const handleDataChange = (event) => {
+	const handleInputChange = (event) => {
 		setInputData({
 			...inputData,
 			[event.target.name]: event.target.value,
@@ -28,7 +28,7 @@ const CowList = () => {
 		});
 	};
 
-	const renderForm = () => <Form handleChange={handleDataChange} submit={addCow} inputData={inputData} />;
+	const renderForm = () => <Form handleChange={handleInputChange} submit={addCow} inputData={inputData} />;
 	const renderList = () => (
 		<>
 			<List list={cowList} />
