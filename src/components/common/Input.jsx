@@ -1,6 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Input.scss';
+import styled from 'styled-components';
+
+const StyledInput = styled.input`
+    background-color: #fff;
+    color: #363636;
+    border-color: hsl(0,0%,80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    font-size: 1rem;
+    width: 4em;
+    min-height: 38px;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding: 0 5px;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+`
 
 const Input = ({
   type,
@@ -12,7 +34,7 @@ const Input = ({
   value,
   placeholder,
 }) => (
-  <input
+  <StyledInput
     value={value}
     className={className}
     type={type}

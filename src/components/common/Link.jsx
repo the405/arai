@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Link.scss';
 
 const Link = ({
   href,
   label
 }) => (
-  <a className="highlight" href={href} rel="noopener noreferrer" target="_blank">
+  <a href={href} rel="noopener noreferrer" target="_blank">
     {label}
   </a>
 );

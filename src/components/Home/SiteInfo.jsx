@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from '../common/Link'
-import './SiteInfo.scss';
+import { Link } from '../common/Link';
 
 const SiteInfo = () => (
   <div className="home__about">
