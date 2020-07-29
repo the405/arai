@@ -46,12 +46,12 @@ const Die = ({ name, state, handleClick, handleChange, handleModeChange }) => {
             className="button die__sides"
           />
           <FontAwesomeIcon icon="plus" />
-          <input
+          <Input
             className="input die__modifier"
             value={state.modifier}
             type="number"
             name="modifier"
-            onChange={handleChange}
+            handleChange={handleChange}
             placeholder="0"
           />
           <div className="color-me die__result">{'= ' + state.result}</div>

@@ -1,8 +1,6 @@
 // /client/App.js
 import React, { Component } from 'react';
 
-import './MongoDB.scss';
-
 // MongoClient
 const { MongoClient } = require('mongodb');
 const assert = require('assert');
