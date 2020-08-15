@@ -20,13 +20,19 @@ const operations = [
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 `
 
 const ButtonWrapper = styled.div`
   display: flex;
+  justify-content: flex-start;
+`;
+
+const Instructions = styled.div`
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  max-width: 750px;
 `;
 
 const Conway = () => {
@@ -107,6 +113,16 @@ const Conway = () => {
   // Render the grid
   const renderContent = () => (
     <Container>
+      <Instructions>
+        <h1>Conway's game of life</h1>
+        <p>Click on any number of cells and then click START. You can also use the Randomize function to populate the grid randomly. Once you start the simulation, the grid will begin populating based on a couple of rules:</p>
+        <ul>
+          <li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+          <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+          <li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+          <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+        </ul>
+      </Instructions>
       <ButtonWrapper>
         <Button
           label={running ? "Stop" : "Start"}
