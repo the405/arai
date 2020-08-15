@@ -1,10 +1,11 @@
 import React, { useState, useCallback, useRef } from 'react';
 import styled from 'styled-components';
 import produce from 'immer';
+import { isMobile } from 'react-device-detect';
 import { Button } from '../../common/Button';
 
-const numRows = 50;
-const numCols = 50;
+const numRows = isMobile ? 30 : 50;
+const numCols = isMobile ? 30 : 50;
 
 const operations = [
   [-1, 1],
@@ -21,7 +22,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-`
+`;
 
 const ButtonWrapper = styled.div`
   display: flex;
@@ -33,6 +34,12 @@ const Instructions = styled.div`
   flex-direction: column;
   justify-content: space-around;
   max-width: 750px;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(${numCols}, 15px);
+  overflow-x: scroll 
 `;
 
 const Conway = () => {
@@ -98,7 +105,7 @@ const Conway = () => {
     });
 
     // Repeat every half a second
-    setTimeout(runSimulation, 300);
+    setTimeout(runSimulation, 100);
   }, [])
 
   // Randomize grid. Tweak the Math.random() probability for denser or sparser distribution
@@ -148,12 +155,7 @@ const Conway = () => {
           className="button"
         />
       </ButtonWrapper>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${numCols}, 15px)`,
-        }}
-      >
+      <Grid>
         {grid.map((rows, i) =>
           rows.map((col, ii) => (
             <div
@@ -168,7 +170,7 @@ const Conway = () => {
             />
           ))
         )}
-      </div>
+      </Grid>
     </Container>
   );
 
