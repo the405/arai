@@ -38,8 +38,8 @@ const Instructions = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(${numCols}, 15px);
-  overflow-x: scroll 
+  grid-template-columns: repeat(${numCols}, 1em);
+  overflow-x: scroll;
 `;
 
 const Conway = () => {
@@ -162,8 +162,8 @@ const Conway = () => {
               key={`${i}-${ii}`}
               onClick={() => toggleCell(i, ii)}
               style={{
-                width: 15,
-                height: 15,
+                width: '1em',
+                height: '1em',
                 backgroundColor: grid[i][ii] ? "rgb(80, 80, 80)" : "white",
                 border: "1px dotted lightgrey",
               }}
