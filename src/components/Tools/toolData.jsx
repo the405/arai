@@ -28,11 +28,11 @@ const toolData = [
     to: '/tools/dummyapi',
   },
   {
-    name: 'Cowlist',
-    component: 'CowList',
+    name: 'Conway',
+    component: 'Conway',
     activeClassName: 'active',
-    iconClass: 'cowlistIcon',
-    to: '/tools/cowlist',
+    iconClass: 'conwayIcon',
+    to: '/tools/conway',
   }
 ];
 
